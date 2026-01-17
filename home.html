@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCart - Grocery & Fast Food</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5}.header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);padding:12px 20px;display:flex;align-items:center;gap:15px;position:sticky;top:0;z-index:1000}.logo{font-size:24px;font-weight:bold;color:#00a651}.location{display:flex;align-items:center;gap:5px;cursor:pointer;font-size:14px}.search{flex:1;max-width:500px;position:relative}.search input{width:100%;padding:10px 40px 10px 15px;border:1px solid #e0e0e0;border-radius:8px;font-size:14px}.search i{position:absolute;right:15px;top:12px;color:#666}.actions{display:flex;gap:15px}.btn{padding:8px 15px;border:none;background:transparent;cursor:pointer;font-size:14px}.cart{position:relative}.badge{position:absolute;top:-5px;right:-5px;background:#ff6b6b;color:#fff;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center}.banner{background:linear-gradient(135deg,#00a651 0%,#00c853 100%);color:#fff;padding:12px;text-align:center;font-size:13px}.container{max-width:1200px;margin:0 auto;padding:20px}.section-title{font-size:20px;font-weight:600;margin-bottom:15px}.categories{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:15px;background:#fff;padding:20px;border-radius:12px;margin-bottom:20px}.category{text-align:center;cursor:pointer}.category-icon{width:60px;height:60px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 8px;background:#f5f5f5;color:#00a651}.category-name{font-size:12px;color:#666}.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:15px}.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);position:relative}.card-img{width:100%;height:160px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;color:#ddd}.badge-red{position:absolute;top:8px;left:8px;background:#ff6b6b;color:#fff;padding:4px 8px;border-radius:4px;font-size:11px;font-weight:600}.card-info{padding:12px}.name{font-size:14px;font-weight:500;margin-bottom:5px}.weight{font-size:12px;color:#999;margin-bottom:8px}.price{display:flex;align-items:center;gap:8px;margin-bottom:10px}.current{font-size:16px;font-weight:600}.original{font-size:13px;color:#999;text-decoration:line-through}.discount{font-size:11px;color:#00a651;font-weight:600}.add-btn{width:100%;padding:10px;background:#00a651;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}.add-btn:hover{background:#008f45}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><i class="fas fa-shopping-bag"></i> QuickCart</div>
+        <div class="location"><i class="fas fa-map-marker-alt" style="color:#00a651"></i><span>Deliver to <strong>Home</strong></span><i class="fas fa-chevron-down" style="font-size:11px"></i></div>
+        <div class="search"><input type="text" placeholder="Search for products..."><i class="fas fa-search"></i></div>
+        <div class="actions"><button class="btn"><i class="fas fa-user"></i> Login</button><button class="btn cart"><i class="fas fa-shopping-cart"></i> Cart<span class="badge">0</span></button></div>
+    </header>
+    <div class="banner"><i class="fas fa-bolt"></i><strong>Free delivery</strong> on orders above ₹99 | <strong>10 minutes</strong> delivery</div>
+    <div class="container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="categories">
+            <div class="category"><div class="category-icon" style="background:#fff3e0;color:#ff9800"><i class="fas fa-hamburger"></i></div><div class="category-name">Fast Food</div></div>
+            <div class="category"><div class="category-icon" style="background:#e8f5e9;color:#00a651"><i class="fas fa-shopping-basket"></i></div><div class="category-name">Grocery</div></div>
+            <div class="category"><div class="category-icon" style="background:#fff3e0;color:#ff9800"><i class="fas fa-pizza-slice"></i></div><div class="category-name">Pizza</div></div>
+            <div class="category"><div class="category-icon" style="background:#e3f2fd;color:#2196f3"><i class="fas fa-ice-cream"></i></div><div class="category-name">Desserts</div></div>
+            <div class="category"><div class="category-icon" style="background:#fce4ec;color:#e91e63"><i class="fas fa-coffee"></i></div><div class="category-name">Beverages</div></div>
+            <div class="category"><div class="category-icon" style="background:#f3e5f5;color:#9c27b0"><i class="fas fa-drumstick-bite"></i></div><div class="category-name">Chicken</div></div>
+        </div>
+        <h2 class="section-title">Fast Food</h2>
+        <div class="products">
+            <div class="card"><div class="badge-red">New</div><div class="card-img"><i class="fas fa-hamburger"></i></div><div class="card-info"><div class="name">Classic Burger Combo</div><div class="weight">1 Burger + Fries</div><div class="price"><span class="current">₹199</span><span class="original">₹249</span><span class="discount">20% OFF</span></div><button class="add-btn">Add to Cart</button></div></div>
+            <div class="card"><div class="card-img"><i class="fas fa-pizza-slice"></i></div><div class="card-info"><div class="name">Margherita Pizza</div><div class="weight">Medium (8 inch)</div><div class="price"><span class="current">₹299</span><span class="original">₹349</span><span class="discount">14% OFF</span></div><button class="add-btn">Add to Cart</button></div></div>
+            <div class="card"><div class="badge-red">Best Seller</div><div class="card-img"><i class="fas fa-drumstick-bite"></i></div><div class="card-info"><div class="name">Chicken Wings (6 pcs)</div><div class="weight">250g</div><div class="price"><span class="current">₹179</span><span class="original">₹199</span><span class="discount">10% OFF</span></div><button class="add-btn">Add to Cart</button></div></div>
+            <div class="card"><div class="card-img"><i class="fas fa-hotdog"></i></div><div class="card-info"><div class="name">Hot Dog</div><div class="weight">1 piece</div><div class="price"><span class="current">₹99</span></div><button class="add-btn">Add to Cart</button></div></div>
+        </div>
+        <h2 class="section-title" style="margin-top:30px">Grocery Essentials</h2>
+        <div class="products">
+            <div class="card"><div class="badge-red">Popular</div><div class="card-img"><i class="fas fa-apple-alt"></i></div><div class="card-info"><div class="name">Fresh Apples</div><div class="weight">1 kg</div><div class="price"><span class="current">₹149</span><span class="original">₹179</span><span class="discount">17% OFF</span></div><button class="add-btn">Add to Cart</button></div></div>
+            <div class="card"><div class="card-img"><i class="fas fa-carrot"></i></div><div class="card-info"><div class="name">Fresh Vegetables</div><div class="weight">500g Mix</div><div class="price"><span class="current">₹79</span></div><button class="add-btn">Add to Cart</button></div></div>
+            <div class="card"><div class="card-img"><i class="fas fa-wine-bottle"></i></div><div class="card-info"><div class="name">Cooking Oil</div><div class="weight">1 Liter</div><div class="price"><span class="current">₹189</span><span class="original">₹209</span><span class="discount">10% OFF</span></div><button class="add-btn">Add to Cart</button></div></div>
+            <div class="card"><div class="card-img"><i class="fas fa-bread-slice"></i></div><div class="card-info"><div class="name">White Bread</div><div class="weight">400g</div><div class="price"><span class="current">₹35</span></div><button class="add-btn">Add to Cart</button></div></div>
+        </div>
+    </div>
+</body>
+</html>
